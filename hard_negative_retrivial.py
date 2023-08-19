@@ -32,7 +32,7 @@ for i in range(341306,375181):
             hard_negative[UMLS_ent[i]].add(random_ent)
     hard_negative[UMLS_ent[i]] = list(hard_negative[UMLS_ent[i]])
 
-f = open('hard_negative_dict_full.obj','wb')
+f = open('hard_negative_dict_full.obj','wb') #full and small
 pickle.dump(hard_negative, f)
 f.close()
 print('tutto ok')
